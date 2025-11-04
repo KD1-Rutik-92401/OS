@@ -1,0 +1,32 @@
+
+ while true; 
+do
+	echo "Menu:"
+	echo "1. Date"
+	echo "2. Cal"
+	echo "3. Ls"
+	echo "4. Pwd"
+	echo "5. Exit"
+	echo "Enter Your Choise"
+	read Choise
+
+	if [$Choise -eq 1];
+	then
+		date
+	elif [$Choise -eq 2];
+	then 
+		cal
+	elif [$Choise -eq 3];
+	then
+		ls
+	elif [$Choise -eq 4];
+	then
+		pwd
+	elif [$Choise -eq 5];
+	then
+		exit 0
+	else
+		echo "Enter the valid Choise"
+	fi
+	echo""
+done
